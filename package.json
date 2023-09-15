@@ -1,0 +1,23 @@
+{
+  "name": "ts-threejs-boilerplate",
+  "version": "0.1.0",
+  "description": "basic setup for threejs project with typescript",
+  "main": "index.js",
+  "dependencies": {
+    "three": "0.156.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kalopsia21t/TS-ThreeJS-Boilerplate.git"
+  },
+  "author": "kalopsia21t",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kalopsia21t/TS-ThreeJS-Boilerplate/issues"
+  },
+  "homepage": "https://github.com/kalopsia21t/TS-ThreeJS-Boilerplate#readme"
+}

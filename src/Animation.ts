@@ -23,7 +23,7 @@ class Animation {
     const resizer = new Resizer(container, this.camera, this.renderer);
   }
 
-  render() {
+  render(): void {
     this.renderer.setAnimationLoop(() => {
       this.sphere.rotation.x += 0.01;
       this.sphere.rotation.y += 0.4;

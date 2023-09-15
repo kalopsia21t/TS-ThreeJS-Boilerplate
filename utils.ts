@@ -1,8 +1,14 @@
-function lerp(a, b, alpha) {
+function lerp(a: number, b: number, alpha: number): number {
   return a + (b - a) * alpha;
 }
 
-function mapRange(value, low1, high1, low2, high2) {
+function mapRange(
+  value: number,
+  low1: number,
+  high1: number,
+  low2: number,
+  high2: number
+): number {
   return low2 + ((high2 - low2) * (value - low1)) / (high1 - low1);
 }
 
