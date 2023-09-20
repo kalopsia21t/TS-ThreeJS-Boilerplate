@@ -3,6 +3,7 @@ import { createSphere } from "./components/sphere";
 import { createScene } from "./components/scene";
 import { createLights } from "./components/lights";
 import { createRenderer } from "./systems/renderer";
+import { createControls } from "./components/orbital-controls";
 
 import { Resizer } from "./systems/Resizer";
 
@@ -12,6 +13,7 @@ class Animation {
   private renderer: any;
   private sphere: any;
   private light: any;
+  private controls: any;
   constructor(container) {
     this.camera = createCamera();
     this.scene = createScene();
@@ -23,6 +25,8 @@ class Animation {
     this.sphere = createSphere({ color: "blue", radius: 0.7 });
 
     this.scene.add(this.sphere, this.light);
+
+    this.controls = createControls(this.camera, this.renderer.domElement);
 
     const resizer = new Resizer(container, this.camera, this.renderer);
   }

@@ -4,9 +4,9 @@
   "description": "basic setup for threejs project with typescript",
   "main": "index.js",
   "dependencies": {
+    "@types/three": "0.156.0",
     "three": "0.156.1"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
